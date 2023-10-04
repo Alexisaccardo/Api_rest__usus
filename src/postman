@@ -1,0 +1,152 @@
+{
+	"info": {
+		"_postman_id": "467eef59-0cb0-4824-ae5d-ea2b42d78397",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29027861"
+	},
+	"item": [
+		{
+			"name": "Register_user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"code\": \"12345\",\r\n        \"name\": \"Adriana\",\r\n        \"lastname\": \"Medina\",\r\n        \"cellphone\": \"3202486229\",\r\n        \"address\": \"Diagonal 10a\",\r\n        \"city\": \"El Doncello\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/register_user",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"register_user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit_user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n    \"code\": \"123\",\r\n        \"name\": \"Johan\",\r\n        \"lastname\": \"Accardo\",\r\n        \"cellphone\": \"3132223486\",\r\n        \"address\": \"Villa Isabela\",\r\n        \"city\": \"El Doncello\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/edit_user",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"edit_user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete_user",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"code\": \"12345\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/delete_user",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"delete_user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search_user",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/search_user",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"search_user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search_one",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/search_one/123",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"search_one",
+						"123"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
